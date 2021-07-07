@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-base-discrete-uniform",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Discrete uniform distributed pseudorandom numbers.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
