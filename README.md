@@ -46,8 +46,26 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/bundle.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/bundle.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.discreteUniform;
+})()
+</script>
 ```
 
 #### discreteUniform( a, b )
@@ -384,8 +402,13 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/bundle.js"></script>
+<script type="text/javascript">
+(function () {
 
 var seed;
 var rand;
@@ -412,6 +435,11 @@ rand = discreteUniform.factory( -20, 20, {
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
+
+})()
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -473,6 +501,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 -->
 
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/random-base-discrete-uniform/tree/deno
+[umd-url]: https://github.com/stdlib-js/random-base-discrete-uniform/tree/umd
+[esm-url]: https://github.com/stdlib-js/random-base-discrete-uniform/tree/esm
+
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
@@ -490,7 +525,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [discrete-uniform-distribution]: https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
 
 </section>
 
