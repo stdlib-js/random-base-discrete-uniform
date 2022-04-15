@@ -24,30 +24,14 @@ limitations under the License.
 
 > [Discrete uniform][discrete-uniform-distribution] distributed pseudorandom numbers.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-base-discrete-uniform
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 ```
 
 #### discreteUniform( a, b )
@@ -118,7 +102,7 @@ The function accepts the following `options`:
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom integers, set the `prng` option.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -216,7 +200,7 @@ for ( i = 0; i < 100; i++ ) {
 If provided a PRNG for uniformly distributed integers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -238,7 +222,7 @@ var len = discreteUniform.seedLength;
 If provided a PRNG for uniformly distributed integers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -287,7 +271,7 @@ r = discreteUniform( -10, 10 );
 If provided a PRNG for uniformly distributed integers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -309,7 +293,7 @@ var len = discreteUniform.stateLength;
 If provided a PRNG for uniformly distributed integers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -331,7 +315,7 @@ var sz = discreteUniform.byteLength;
 If provided a PRNG for uniformly distributed integers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -353,7 +337,7 @@ var o = discreteUniform.toJSON();
 If provided a PRNG for uniformly distributed numbers, this method returns `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 var rand = discreteUniform.factory({
     'prng': minstd
@@ -384,8 +368,13 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 
 var seed;
 var rand;
@@ -412,6 +401,10 @@ rand = discreteUniform.factory( -20, 20, {
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -435,7 +428,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -490,7 +483,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [discrete-uniform-distribution]: https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/esm
 
 </section>
 
