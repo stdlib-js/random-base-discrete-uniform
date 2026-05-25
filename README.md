@@ -442,6 +442,7 @@ for ( i = 0; i < 100; i++ ) {
 -   <span class="package-name">[`@stdlib/random-array/discrete-uniform`][@stdlib/random/array/discrete-uniform]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers drawn from a discrete uniform distribution.</span>
 -   <span class="package-name">[`@stdlib/random-iter/discrete-uniform`][@stdlib/random/iter/discrete-uniform]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a discrete uniform distribution.</span>
 -   <span class="package-name">[`@stdlib/random-streams/discrete-uniform`][@stdlib/random/streams/discrete-uniform]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a discrete uniform distribution.</span>
+-   <span class="package-name">[`@stdlib/random-discrete-uniform`][@stdlib/random/discrete-uniform]</span><span class="delimiter">: </span><span class="description">generate pseudorandom numbers drawn from a discrete uniform distribution.</span>
 
 </section>
 
@@ -523,6 +524,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/random/iter/discrete-uniform]: https://github.com/stdlib-js/random-iter-discrete-uniform
 
 [@stdlib/random/streams/discrete-uniform]: https://github.com/stdlib-js/random-streams-discrete-uniform
+
+[@stdlib/random/discrete-uniform]: https://github.com/stdlib-js/random-discrete-uniform
 
 <!-- </related-links> -->
 
