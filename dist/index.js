@@ -1,4 +1,4 @@
-"use strict";var y=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var S=y(function(re,O){
+"use strict";var y=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(t){throw (e=0, t)}};};var S=y(function(re,O){
 var b=require('@stdlib/assert-is-integer/dist').isPrimitive,N=require('@stdlib/error-tools-fmtprodmsg/dist'),A=require('@stdlib/assert-is-nan/dist');function B(r,e){return !b(r)||A(r)?new TypeError(N('0oB77',r)):!b(e)||A(e)?new TypeError(N('0oB78',e)):r>e?new RangeError(N('0oBEK',r,e)):null;}O.exports=B
 });var R=y(function(te,T){
 var E=require('@stdlib/constants-float64-max-safe-integer/dist'),f=require('@stdlib/math-base-special-floor/dist');function L(r,e,t){var a,i,n,g,l,o,m,d,v;if(n=t-e,n===0)return e;if(m=r.MIN,d=r.MAX,i=d-m,i===n)return r()-m+e;if(i<n)for(g=0;;){for(n===E?(g=f(n/(i+1)),n%(i+1)===i&&(g+=1)):g=f((n+1)/(i+1)),a=0,o=1;o<=g;){if(a+=(r()-m)*o,o*i===n-o+1)return a;o*=i+1}if(v=L(r,0,f(n/o)),!(v>E/o)&&(v*=o,a+=v,!(a>n)))return a+e}for(i===E?(l=f(i/(n+1)),i%(n+1)===n&&(l+=1)):l=f((i+1)/(n+1));;)if(a=r()-m,a=f(a/l),a<=n)return a+e}T.exports=L
